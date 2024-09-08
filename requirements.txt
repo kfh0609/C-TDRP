@@ -1,0 +1,43 @@
+numpy==1.15.0
+pandas==0.23.3
+tensorflow-gpu==1.10.0
+keras==2.2.2
+matplotlib==2.2.2
+actor_net_lr: 0.0001
+agent_type: attention
+batch_size: 128
+beam_width: 10
+capacity: 20
+critic_net_lr: 0.0001
+data_dir: data
+decode_len: 16
+demand_max: 8
+disable_tqdm: True
+dropout: 0.1
+embedding_dim: 128
+entropy_coeff: 0.0
+forget_bias: 1.0
+gpu: 3
+hidden_dim: 512
+infer_type: batch
+input_dim: 3
+is_train: True
+load_path: 
+log_dir: logs/vrp10-2019-11-09_21-20-46
+log_interval: 200
+mask_glimpses: True
+mask_pointer: True
+max_grad_norm: 2.0
+model_dir: logs/vrp10-2019-11-09_21-20-46/model
+n_location: 20
+n_truck_capacity : 100
+n_drone_capacity: 10
+n_time_windows = np.random.randint(8:00, 17:00)
+n_obstacles = np.random.randint(0, 100)
+rnn_layers: 1
+save_interval: 10000
+stdout_print: True
+tanh_exploration: 10.0
+task_name: C-TDRP
+test_interval: 120
+use_tanh: False
